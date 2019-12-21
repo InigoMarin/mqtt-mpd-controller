@@ -11,7 +11,9 @@ sudo mkdir /etc/mqtt_mpc_controller
 sudo cp config.ini /etc/mqtt_mpc_controller/
 
 sudo cp mqtt-mpd-controller.py /usr/local/bin/mqtt_mpd_controller
+sudo chmod +x /usr/local/bin/mqtt_mpc_controller
 sudo cp info.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/info.sh
 
 sudo cp mqtt-mpd-controller.service /lib/systemd/system/
 sudo systemctl enable mqtt-mpd-controller.service
